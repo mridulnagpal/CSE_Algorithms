@@ -32,7 +32,7 @@ void Insertion_Sort (int arr[], int length) {
       for (int i = 0; i < length; i++) {
         cout << "\nElement " << i+1 << " : " << arr[i];
       }
-      cout << endl ;
+      cout << endl ;  
   }
 
 
