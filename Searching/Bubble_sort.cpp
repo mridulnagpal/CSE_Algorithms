@@ -9,7 +9,7 @@
 //originally became well known primarily because it was one of the first algorithms (of any kind)
 //that was rigorously analyzed, and the proof was found that it was optimal under its limited
 //circumstance.
-//
+//Complexity O(n^2)
 
 using namespace std;
 
