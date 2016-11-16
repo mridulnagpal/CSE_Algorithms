@@ -1,15 +1,16 @@
 #include<iostream>
+#define int unsigned long long int
 
-//
-// Insertion Sort
-//
-//Insertion_sort.cpp
-//
-//Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one
-//item at a time. It is much less efficient on large lists than more advanced algorithms such
-//as quicksort, heapsort, or merge sort.
-//Complexity O(n^2)
-
+/**
+*	Insertion Sort
+*
+*	Insertion_sort.cpp
+*
+*	Insertion sort is a simple sorting algorithm that builds the final sorted array (or list) one
+*	item at a time. It is much less efficient on large lists than more advanced algorithms such
+*	as quicksort, heapsort, or merge sort.
+*	Complexity O(n^2)
+**/
 using namespace std;
 
 void Insertion_Sort (int arr[], int length) {
@@ -35,8 +36,7 @@ void Insertion_Sort (int arr[], int length) {
       cout << endl ;  
   }
 
-
-int main () {
+main () {
 
   int length;
   cout << "Enter length of array ";
@@ -50,6 +50,4 @@ int main () {
 
   Insertion_Sort (arr, length);
   Display (arr, length);
-
-  return 0;
 }
