@@ -32,7 +32,7 @@ int main() {
         cin >> count ;
         int A[count] ;
         for(i = 0; i < count; i++)
-                cin >> A[i] ;
+                cin >> A[i] ;		//Takes the input array where Binary Search is to be executed
         int n ;
         cin >> n ;
         BinarySearch(A,0,count-1,n) ;
