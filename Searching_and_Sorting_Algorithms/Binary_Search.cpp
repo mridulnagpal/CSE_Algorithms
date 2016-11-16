@@ -10,7 +10,8 @@
 //
 //Binary Search is a search algorithm that is more optimised than linear search.
 //It significantly reduces the runtime of programs.
-//The following is a basic implementation of the Binary Search algorithm with Complexity log(n).
+//The following is a basic implementation of the Binary Search algorithm.
+//Complexity O(log n).
 
 using namespace std;
 
