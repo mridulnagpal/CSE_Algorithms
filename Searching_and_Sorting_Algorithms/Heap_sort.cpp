@@ -16,8 +16,7 @@ using namespace std;
 
 // To heapify a subtree rooted with node i which is
 // an index in arr[].
-void heapify(int arr[], int length, int i)
-{
+void heapify(int arr[], int length, int i) {
     int largest = i;  // Initialize largest as root
     int l = 2*i + 1;  // left = 2*i + 1
     int r = 2*i + 2;  // right = 2*i + 2
@@ -31,8 +30,7 @@ void heapify(int arr[], int length, int i)
         largest = r;
 
     // If largest is not root
-    if (largest != i)
-    {
+    if (largest != i) {
         swap(arr[i], arr[largest]);
 
         // Recursively heapify the affected sub-tree
@@ -40,15 +38,13 @@ void heapify(int arr[], int length, int i)
     }
 }
 
-void Heap_sort(int arr[], int length)
-{
+void Heap_sort(int arr[], int length) {
     // Build heap (rearrange array)
     for (int i = length / 2 - 1; i >= 0; i--)
         heapify(arr, length, i);
 
     // One by one extract an element from heap
-    for (int i=length-1; i>=0; i--)
-    {
+    for (int i=length-1; i>=0; i--) {
         // Move current root to end
         swap(arr[0], arr[i]);
 
