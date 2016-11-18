@@ -5,7 +5,7 @@
 // Binary Search
 //
 //
-// Binary_Search.pp
+// Binary_Search.cpp
 //
 //
 //Binary Search is a search algorithm that is more optimised than linear search.
