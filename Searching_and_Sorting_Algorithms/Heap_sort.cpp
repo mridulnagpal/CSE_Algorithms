@@ -1,17 +1,17 @@
 #include <iostream>
-
-//
-// Heap Sort
-//
-//Heap_sort.cpp
-//
-//In computer science, heapsort is a comparison-based sorting algorithm. Heapsort can be thought
-//of as an improved selection sort: like that algorithm, it divides its input into a sorted and an
-//unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element
-//and moving that to the sorted region. The improvement consists of the use of a heap data structure
-//rather than a linear-time search to find the maximum.
-//Complexity O(n*logn)
-
+#define int unsigned long long int 
+/**
+*	 Heap Sort
+*
+*	Heap_sort.cpp
+*
+*	In computer science, heapsort is a comparison-based sorting algorithm. Heapsort can be thought
+*	of as an improved selection sort: like that algorithm, it divides its input into a sorted and an
+*	unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element
+*	and moving that to the sorted region. The improvement consists of the use of a heap data structure
+*	rather than a linear-time search to find the maximum.
+*	Complexity O(n*logn)
+**/
 using namespace std;
 
 // To heapify a subtree rooted with node i which is
@@ -60,23 +60,16 @@ void Display (int arr[], int length) {
     }
     cout << endl ;
 }
-
-
-
-int main () {
+main () {
 
   int length;
   cout << "Enter length of array ";
   cin >> length;
   int arr[length];
-
   for (int i = 0; i < length; i++) {
     cout << "\nEnter element number " << i+1 << " " ;
     cin >> arr[i] ;
   }
-
   Heap_sort (arr, length);
   Display (arr, length);
-
-  return 0;
 }

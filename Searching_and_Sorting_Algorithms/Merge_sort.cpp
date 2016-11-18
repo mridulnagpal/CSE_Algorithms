@@ -1,18 +1,20 @@
 #include<iostream>
+#define int unsigned long long int
 
-//Merge Sort
-//
-//Merge_Sort.cpp
-//
-//In computer science, mergesort is an efficient, comparison based algorithm
-//
-//It is a divide and conquer algorithm that produces a stable sort(preserves
-//input order of equal elements
-//It has 2 steps
-//Step 1: Divide the unsorted list into n sublists of 1 element each.
-//Step 2: Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining which is the sorted list.
-//Complexity O(n*log n)
-
+/**
+*	Merge Sort
+*
+*	Merge_Sort.cpp
+*
+**	In computer science, mergesort is an efficient, comparison based algorithm
+*
+*	It is a divide and conquer algorithm that produces a stable sort(preserves
+*	input order of equal elements
+**	It has 2 steps
+*	Step 1: Divide the unsorted list into n sublists of 1 element each.
+*	Step 2: Repeatedly merge sublists to produce new sorted sublists until there is only 1 sublist remaining which is the sorted list.
+*	Complexity O(n*log n)
+**/
 using namespace std;
 
 // Merges two subarrays of arr[].
@@ -88,9 +90,7 @@ void Display (int arr[], int length) {
 	cout << endl ;
 }
 
-
-
-int main () {
+main () {
 
 	int length;
 	cout << "Enter length of array: ";
@@ -104,7 +104,6 @@ int main () {
 
 	Merge_sort (arr, 0 ,length-1);
 	Display (arr, length);
-
-	return 0;
 }
+
 
