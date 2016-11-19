@@ -14,15 +14,17 @@
 using namespace std;
 
 void Selection_Sort (int arr[], int length) {
-  for(int i = 0 ; i < length-1 ; i++) {
-         for(int j = i+1; j < length; j++) {
-              if(arr[i] > arr[j]) {
-                   int temp = arr[i];
-                   arr[i] = arr[j];
-                   arr[j] = temp;
-               }
+  int max = 0;
+  for(int i = length - 1 ; i >= 0 ; i--) {
+         for(int j = 0; j <= i; j++) {
+            if(arr[j] > arr[max]) {
+                max = j;
+            }
         }
-   }
+        int temp = arr[i];
+        arr[i] = arr[max];
+        arr[max] = temp;
+  }
 }
 
   void Display (int arr[], int length) {
@@ -40,12 +42,10 @@ int main () {
   cout << "Enter length of array ";
   cin >> length;
   int arr[length];
-
   for (int i = 0; i < length; i++) {
     cout << "\nEnter element number " << i+1 << " " ;
     cin >> arr[i] ;
   }
-
   Selection_Sort (arr, length);
   Display (arr, length);
 
