@@ -14,10 +14,10 @@ using namespace std;
  * left and right subtrees is atmost 1.
  * If it were to be kept balanced and were to maintain this property then it becomes important to know which of the two is deeper 
  * and take a one-way difference, which is referred to as the balance factor.
- * The program here is a class-object implementation of the AVL tree.
+ * The program here is a class-object implementation of the AVL tree. It is similar to the implementation of the BST tree, 
+ * the only difference being the requirement of "left-rotating" or "right-rotating" the tree.
  * 
  */
-
 typedef struct node{
 	int data;
 	struct node* left;
