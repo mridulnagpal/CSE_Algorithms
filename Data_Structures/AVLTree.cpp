@@ -6,6 +6,18 @@
 
 using namespace std;
 
+/*
+ * AVLTree.cpp
+ *
+ * AVL Tree (Balanced BST):
+ * An AVL tree is a self-balancing BST with the property that at every node, the difference between the heights of its 
+ * left and right subtrees is atmost 1.
+ * If it were to be kept balanced and were to maintain this property then it becomes important to know which of the two is deeper 
+ * and take a one-way difference, which is referred to as the balance factor.
+ * The program here is a class-object implementation of the AVL tree.
+ * 
+ */
+
 typedef struct node{
 	int data;
 	struct node* left;
